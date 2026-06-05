@@ -70,7 +70,13 @@
                     <h2 class="text-xs font-black text-indigo-600 uppercase tracking-[0.3em] mb-4">Academic Pillar</h2>
                     <h3 class="text-5xl font-black leading-tight tracking-tight text-slate-900">The Computer Science <span class="text-slate-400">Foundation.</span></h3>
                 </div>
-                <p class="text-slate-500 font-medium md:max-w-xs">A deep understanding of the core principles that drive modern computing systems.</p>
+                <div class="flex flex-col gap-4 md:max-w-xs">
+                    <p class="text-slate-500 font-medium">A deep understanding of the core principles that drive modern computing systems.</p>
+                    <div class="p-4 bg-indigo-50 rounded-2xl border border-indigo-100">
+                        <p class="text-xs font-black text-indigo-600 uppercase mb-1">Top Academic Performance</p>
+                        <p class="text-lg font-black text-indigo-900">Final GPA: 1.7</p>
+                    </div>
+                </div>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -121,6 +127,43 @@
                     </div>
                     <h4 class="text-xl font-black mb-3 text-slate-900">Artificial Intelligence</h4>
                     <p class="text-slate-500 text-sm leading-relaxed">Neural networks, reinforcement learning, and NLP. Leveraging mathematical models to build intelligent, autonomous agents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Awards -->
+    <section id="achievements" class="section-padding bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute bottom-0 left-0 w-[40rem] h-[40rem] bg-indigo-500/10 rounded-full blur-[8rem] -ml-[20rem] -mb-[20rem]"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-black text-indigo-400 uppercase tracking-[0.3em] mb-4">Recognitions</h2>
+                <h3 class="text-5xl font-black tracking-tight">Awards & <span class="text-slate-400 italic">Honours.</span></h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-10 bg-slate-800/40 rounded-[3rem] border border-slate-700 hover:border-indigo-500/50 transition-all card">
+                    <div class="flex items-start gap-6">
+                        <div class="w-16 h-16 bg-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="trophy" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <span class="text-indigo-400 font-bold text-sm uppercase tracking-widest mb-2 block">2023</span>
+                            <h4 class="text-2xl font-black mb-3">Medal of Honour</h4>
+                            <p class="text-slate-400 leading-relaxed font-medium">Awarded by S.N.P.I.T.&R.C. for exceptional academic excellence and contribution to the engineering department.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 bg-slate-800/40 rounded-[3rem] border border-slate-700 hover:border-indigo-500/50 transition-all card">
+                    <div class="flex items-start gap-6">
+                        <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="rocket" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <span class="text-emerald-400 font-bold text-sm uppercase tracking-widest mb-2 block">2021</span>
+                            <h4 class="text-2xl font-black mb-3">Rocket Development Award</h4>
+                            <p class="text-slate-400 leading-relaxed font-medium">Worked and researched missiles for increasing range and lightweight for fuel efficiency, design, and durability at S.N.P.I.T.&R.C.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -251,6 +294,108 @@
         </div>
     </section>
 
+    <!-- Projects -->
+    <section id="projects" class="section-padding">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-3xl font-black">Featured <span class="text-indigo-600">Projects</span></h2>
+                <a href="#" class="text-sm font-bold text-indigo-600 hover:underline">View All Projects</a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="group">
+                    <div class="aspect-video bg-slate-200 rounded-[2rem] mb-6 overflow-hidden relative card">
+                        <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">WebSocket</span>
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">AI/NLP</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">AI Multilingual Video Meetup</h4>
+                    <p class="text-slate-600 mb-4">Real-time video collaboration platform with near-zero translation latency.</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-video bg-slate-200 rounded-[2rem] mb-6 overflow-hidden relative card">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">Python</span>
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">Reinforcement Learning</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Autonomous Navigation Agent</h4>
+                    <p class="text-slate-600 mb-4">RL agent navigating complex environments using reward shaping and simulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section-padding bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-20">
+                <h2 class="text-xs font-black text-indigo-600 uppercase tracking-[0.3em] mb-4">Research & Contributions</h2>
+                <h3 class="text-5xl font-black tracking-tight">Academic <span class="text-slate-400">Publications.</span></h3>
+            </div>
+            
+            <div class="space-y-8">
+                <!-- Publication 1 -->
+                <div class="p-10 bg-white rounded-[3rem] border border-slate-200 card group hover:border-indigo-600 transition-all">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="book-open" class="w-8 h-8"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-2xl font-black text-slate-900 leading-tight">A Deep Research on Heterogeneous High-Performance Computing</h4>
+                                <span class="px-4 py-1 bg-slate-100 rounded-full text-xs font-bold text-slate-500">2024</span>
+                            </div>
+                            <p class="text-slate-600 font-medium mb-6 leading-relaxed">
+                                Authored peer-reviewed research examining performance trade-offs across multi-processor and GPU hardware combinations. Benchmarked compute throughput, memory bandwidth, and power efficiency, contributing practical guidance for HPC system design decisions.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="skill-badge">C++</span>
+                                <span class="skill-badge">CUDA</span>
+                                <span class="skill-badge">GPU Computing</span>
+                                <span class="skill-badge">MATLAB</span>
+                                <span class="skill-badge">Performance Benchmarking</span>
+                            </div>
+                            <a href="#" class="inline-flex items-center gap-2 text-indigo-600 font-black text-sm group-hover:gap-3 transition-all">
+                                Read Full Paper <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="p-10 bg-white rounded-[3rem] border border-slate-200 card group hover:border-indigo-600 transition-all">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="image" class="w-8 h-8"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-2xl font-black text-slate-900 leading-tight">Image Segmentation and Object Detection</h4>
+                                <span class="px-4 py-1 bg-slate-100 rounded-full text-xs font-bold text-slate-500">2022</span>
+                            </div>
+                            <p class="text-slate-600 font-medium mb-6 leading-relaxed">
+                                Implemented pixel-wise image segmentation using cluster-based techniques, edge detection, and threshold methods. Integrated object detection pipeline capable of identifying multiple objects with bounding boxes. Designed an FCN-based encoder-decoder model for semantic segmentation.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="skill-badge">Python</span>
+                                <span class="skill-badge">YOLO</span>
+                                <span class="skill-badge">CNN</span>
+                                <span class="skill-badge">OpenCV</span>
+                                <span class="skill-badge">Flutter</span>
+                            </div>
+                            <a href="#" class="inline-flex items-center gap-2 text-indigo-600 font-black text-sm group-hover:gap-3 transition-all">
+                                View Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Ambitions & Soft Skills -->
     <section id="ambitions" class="section-padding bg-slate-900 text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-[50rem] h-[50rem] bg-indigo-600/10 rounded-full blur-[10rem] -mr-[25rem] -mt-[25rem]"></div>
@@ -288,6 +433,9 @@
                             <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold text-slate-300">Effective Communication</span>
                             <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold text-slate-300">Adaptability</span>
                             <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold text-slate-300">Attention to Detail</span>
+                            <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold text-slate-300">Project Leadership</span>
+                            <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold text-slate-300">Decision Making</span>
+                            <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold text-slate-300">Results-Oriented</span>
                         </div>
                     </div>
                     <div class="bg-indigo-600 p-8 rounded-[3rem] shadow-2xl">
