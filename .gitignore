@@ -1,0 +1,10 @@
+# Standard web development ignores
+.DS_Store
+node_modules/
+dist/
+build/
+.env
+*.log
+
+# Project specific
+# static/uploads/*.pdf

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatsal Maisuria | Full-Stack Developer & DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .gradient-bg { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }
+        .gradient-text { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); }
+        .section-padding { padding-top: 6rem; padding-bottom: 6rem; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <span class="text-xl font-bold gradient-text">VM.</span>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-sm font-semibold hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="#about" class="text-sm font-semibold hover:text-indigo-600 transition-colors">About</a>
+                    <a href="#experience" class="text-sm font-semibold hover:text-indigo-600 transition-colors">Experience</a>
+                    <a href="#skills" class="text-sm font-semibold hover:text-indigo-600 transition-colors">Skills</a>
+                    <a href="#projects" class="text-sm font-semibold hover:text-indigo-600 transition-colors">Projects</a>
+                    <a href="#contact" class="text-sm font-semibold hover:text-indigo-600 transition-colors">Contact</a>
+                    <a href="admin.html" class="p-2 text-slate-400 hover:text-slate-600 transition-colors"><i data-lucide="lock" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="px-4 py-1.5 bg-indigo-50 text-indigo-600 rounded-full text-sm font-semibold mb-6 inline-block">Open to Relocate | Opportunity Card Holder</span>
+                <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">Vatsal <span class="gradient-text">Maisuria</span></h1>
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed max-w-xl">
+                    Full-Stack Developer & DevOps Engineer with 6+ years of experience. Specializing in Flutter, JavaScript, Python, .NET, and Rust.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-8 py-4 gradient-bg text-white rounded-2xl font-bold shadow-lg shadow-indigo-200 hover:opacity-90 transition-all">Get in Touch</a>
+                    <div class="flex gap-2">
+                        <a href="static/uploads/CV_Vatsal_Maisuria.pdf" download class="px-6 py-4 bg-white border border-slate-200 rounded-2xl font-bold flex items-center gap-2 hover:border-indigo-600 hover:text-indigo-600 transition-all text-sm">
+                            <i data-lucide="download" class="w-4 h-4"></i> CV
+                        </a>
+                        <a href="static/uploads/CoverLetter_Vatsal_Maisuria.pdf" download class="px-6 py-4 bg-white border border-slate-200 rounded-2xl font-bold flex items-center gap-2 hover:border-indigo-600 hover:text-indigo-600 transition-all text-sm">
+                            <i data-lucide="file-text" class="w-4 h-4"></i> Cover Letter
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 flex gap-6">
+                    <a href="https://linkedin.com/in/vatsal-maisuria" target="_blank" class="text-slate-400 hover:text-indigo-600 transition-colors flex items-center gap-2 text-sm font-medium"><i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn</a>
+                    <a href="mailto:maisuriavatsal.de@gmail.com" class="text-slate-400 hover:text-indigo-600 transition-colors flex items-center gap-2 text-sm font-medium"><i data-lucide="mail" class="w-5 h-5"></i> Email</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl rotate-3 bg-indigo-100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Vatsal Maisuria" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden sm:block -rotate-3">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl"><i data-lucide="activity"></i></div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Uptime</p>
+                            <p class="text-xl font-black">99.9% SLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-3xl">
+                <h2 class="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-4">Professional Summary</h2>
+                <h3 class="text-4xl font-extrabold mb-8 leading-tight">Delivering expertise and leadership to <span class="text-slate-400 italic">cutting-edge</span> companies.</h3>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Skilled Full-Stack Developer and DevOps Engineer with 6+ years in production systems. Specializing in Flutter, JavaScript, Python, .NET, C++, Rust, and Spring Boot microservices. Achieved 99.9% SLA, over 85% test automation, and enhanced CI/CD by 40%.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section-padding bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-black mb-12">Work <span class="text-indigo-600">Experience</span></h2>
+            <div class="grid gap-8">
+                <!-- Contabo -->
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-100 card relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-[5rem] -mr-16 -mt-16 opacity-50"></div>
+                    <div class="flex flex-wrap justify-between items-start gap-4 mb-6 relative z-10">
+                        <div>
+                            <h4 class="text-2xl font-bold">Content Management System Developer</h4>
+                            <p class="text-indigo-600 font-bold">Contabo | Ingolstadt, Germany</p>
+                        </div>
+                        <span class="px-4 py-2 bg-slate-100 rounded-xl text-sm font-bold text-slate-500">12/2025 – 04/2026</span>
+                    </div>
+                    <ul class="space-y-4 text-slate-600 relative z-10">
+                        <li class="flex gap-4">
+                            <span class="w-1.5 h-1.5 bg-indigo-600 rounded-full mt-2.5 flex-shrink-0"></span>
+                            <span>Built a production-grade headless CMS on Ubuntu VPS supporting 300+ concurrent users with 95% uptime and zero data-loss incidents.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-1.5 h-1.5 bg-indigo-600 rounded-full mt-2.5 flex-shrink-0"></span>
+                            <span>Designed PostgreSQL schema with automated backup routines, cutting DBA intervention by 90% and recovery time from hours to minutes.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- AnnexTech -->
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-100 card relative overflow-hidden">
+                    <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
+                        <div>
+                            <h4 class="text-2xl font-bold">Project Manager</h4>
+                            <p class="text-indigo-600 font-bold">AnnexTech Software | Gujarat, India</p>
+                        </div>
+                        <span class="px-4 py-2 bg-slate-100 rounded-xl text-sm font-bold text-slate-500">07/2022 – 04/2025</span>
+                    </div>
+                    <ul class="space-y-4 text-slate-600">
+                        <li class="flex gap-4">
+                            <span class="w-1.5 h-1.5 bg-indigo-600 rounded-full mt-2.5 flex-shrink-0"></span>
+                            <span>Led development of a Flutter + Spring Boot platform serving 10,000+ users at 99.9% uptime with 50,000+ daily API calls.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-1.5 h-1.5 bg-indigo-600 rounded-full mt-2.5 flex-shrink-0"></span>
+                            <span>Architected RESTful and gRPC microservices with JWT/OAuth2, OpenAPI 3.0, and circuit-breaker patterns.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-padding bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-black mb-16">Technical <span class="text-indigo-400">Toolkit</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div>
+                    <h4 class="text-indigo-400 font-bold uppercase tracking-widest text-xs mb-6">Languages & Logic</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Java</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Python</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Dart</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">TypeScript</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Rust</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">C++</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Go</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-indigo-400 font-bold uppercase tracking-widest text-xs mb-6">Infrastructure & DevOps</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Docker</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Kubernetes</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">AWS / GCP / Azure</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">CI/CD</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Prometheus</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-indigo-400 font-bold uppercase tracking-widest text-xs mb-6">Frameworks</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Flutter (BLoC)</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Spring Boot</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">React</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-sm font-medium border border-slate-700">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-padding">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-3xl font-black">Featured <span class="text-indigo-600">Projects</span></h2>
+                <a href="#" class="text-sm font-bold text-indigo-600 hover:underline">View All Projects</a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="group">
+                    <div class="aspect-video bg-slate-200 rounded-[2rem] mb-6 overflow-hidden relative card">
+                        <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">WebSocket</span>
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">AI/NLP</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">AI Multilingual Video Meetup</h4>
+                    <p class="text-slate-600 mb-4">Real-time video collaboration platform with near-zero translation latency.</p>
+                </div>
+                <div class="group">
+                    <div class="aspect-video bg-slate-200 rounded-[2rem] mb-6 overflow-hidden relative card">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">Python</span>
+                        <span class="text-[10px] font-black uppercase tracking-tighter px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">Reinforcement Learning</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Autonomous Navigation Agent</h4>
+                    <p class="text-slate-600 mb-4">RL agent navigating complex environments using reward shaping and simulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="max-w-4xl mx-auto px-4 bg-slate-50 rounded-[3rem] p-12 border border-slate-100">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black mb-4">Get In Touch</h2>
+                <p class="text-slate-500">I'm currently looking for new opportunities in the EU/EEA.</p>
+            </div>
+            
+            <form id="contactForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" id="name" placeholder="Your Name" required class="w-full px-6 py-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-4 focus:ring-indigo-50 transition-all bg-white">
+                    <input type="email" id="email" placeholder="Your Email" required class="w-full px-6 py-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-4 focus:ring-indigo-50 transition-all bg-white">
+                </div>
+                <input type="text" id="subject" placeholder="Subject" required class="w-full px-6 py-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-4 focus:ring-indigo-50 transition-all bg-white">
+                <textarea id="message" rows="5" placeholder="Your Message" required class="w-full px-6 py-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-4 focus:ring-indigo-50 transition-all bg-white"></textarea>
+                <button type="submit" class="w-full py-5 gradient-bg text-white rounded-2xl font-black shadow-xl shadow-indigo-100 hover:scale-[1.02] active:scale-[0.98] transition-all flex justify-center items-center gap-3">
+                    Send Message <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+            </form>
+            <div id="successMsg" class="hidden mt-6 p-4 bg-emerald-50 text-emerald-600 rounded-2xl text-center font-bold border border-emerald-100">
+                Message sent successfully! I'll get back to you soon.
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-sm font-medium">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Vatsal Maisuria. Designed for Excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Contact Form Logic with LocalStorage
+        const contactForm = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMsg');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const newMessage = {
+                id: Date.now(),
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                date: new Date().toLocaleString()
+            };
+
+            // Get existing messages
+            const messages = JSON.parse(localStorage.getItem('portfolio_messages') || '[]');
+            messages.push(newMessage);
+            localStorage.setItem('portfolio_messages', JSON.stringify(messages));
+
+            // Show success
+            contactForm.reset();
+            successMsg.classList.remove('hidden');
+            setTimeout(() => successMsg.classList.add('hidden'), 5000);
+        });
+    </script>
+</body>
+</html>
