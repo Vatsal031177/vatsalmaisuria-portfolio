@@ -10,7 +10,27 @@
     <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
 </head>
 <body class="bg-slate-50 text-slate-900">
-    <div class="min-h-screen flex flex-col">
+    <!-- Auth Overlay -->
+    <div id="authOverlay" class="fixed inset-0 z-[100] bg-slate-900 flex items-center justify-center px-4">
+        <div class="max-w-md w-full bg-white rounded-[2.5rem] p-10 shadow-2xl border border-slate-100">
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="lock" class="w-8 h-8"></i>
+                </div>
+                <h2 class="text-2xl font-black text-slate-900">Admin Login</h2>
+                <p class="text-slate-500 text-sm mt-2">Please enter your password to continue.</p>
+            </div>
+            <form id="authForm" class="space-y-4">
+                <input type="password" id="adminPassword" placeholder="••••••••" required class="w-full px-6 py-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-4 focus:ring-indigo-50 transition-all bg-slate-50/50 text-center font-bold tracking-widest">
+                <button type="submit" class="w-full py-4 bg-indigo-600 text-white rounded-2xl font-black shadow-xl shadow-indigo-100 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                    Access Dashboard
+                </button>
+            </form>
+            <p id="authError" class="hidden text-red-500 text-xs font-bold text-center mt-4 uppercase tracking-widest">Incorrect Password</p>
+        </div>
+    </div>
+
+    <div id="adminContent" class="hidden min-h-screen flex flex-col">
         <!-- Header -->
         <header class="bg-white border-b border-slate-200 sticky top-0 z-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
@@ -20,7 +40,13 @@
                     </a>
                     <h1 class="text-xl font-extrabold tracking-tight">Admin <span class="text-indigo-600">Inbox</span></h1>
                 </div>
-                <button onclick="clearMessages()" class="text-xs font-bold text-red-500 hover:text-red-700 transition-colors uppercase tracking-widest">Clear All</button>
+                <div class="flex items-center gap-6">
+                    <button onclick="clearMessages()" class="text-xs font-bold text-red-500 hover:text-red-700 transition-colors uppercase tracking-widest">Clear All</button>
+                    <button onclick="logout()" class="flex items-center gap-2 px-4 py-2 hover:bg-slate-100 rounded-xl transition-colors text-sm font-bold text-slate-600">
+                        <i data-lucide="log-out" class="w-4 h-4"></i>
+                        Logout
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -44,6 +70,44 @@
 
     <script>
         lucide.createIcons();
+
+        // Authentication Logic
+        const CORRECT_PASSWORD_HASH = "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"; // "admin123"
+        const authOverlay = document.getElementById('authOverlay');
+        const adminContent = document.getElementById('adminContent');
+        const authForm = document.getElementById('authForm');
+        const authError = document.getElementById('authError');
+
+        async function hashPassword(string) {
+            const utf8 = new TextEncoder().encode(string);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        async function checkAuth() {
+            if (sessionStorage.getItem('adminAuthenticated') === 'true') {
+                authOverlay.classList.add('hidden');
+                adminContent.classList.remove('hidden');
+                loadMessages();
+            }
+        }
+
+        authForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const password = document.getElementById('adminPassword').value;
+            const hashedPassword = await hashPassword(password);
+            
+            if (hashedPassword === CORRECT_PASSWORD_HASH) {
+                sessionStorage.setItem('adminAuthenticated', 'true');
+                authOverlay.classList.add('hidden');
+                adminContent.classList.remove('hidden');
+                loadMessages();
+            } else {
+                authError.classList.remove('hidden');
+                setTimeout(() => authError.classList.add('hidden'), 3000);
+            }
+        });
 
         function loadMessages() {
             const messages = JSON.parse(localStorage.getItem('portfolio_messages') || '[]');
@@ -98,7 +162,12 @@
             }
         }
 
-        loadMessages();
+        function logout() {
+            sessionStorage.removeItem('adminAuthenticated');
+            window.location.reload();
+        }
+
+        checkAuth();
     </script>
 </body>
 </html>
