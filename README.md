@@ -6,6 +6,7 @@ A modern, professional portfolio website built with HTML5, Tailwind CSS, and Van
 - **Responsive Design**: Mobile-first approach using Tailwind CSS.
 - **Admin Inbox**: Private message management using browser LocalStorage.
 - **CV & Cover Letter**: Downloadable documents section.
+- **Social Integration**: Linked to GitHub, LinkedIn, and Email.
 - **Smooth Animations**: Interactive UI with Lucide icons.
 
 ## Project Structure
